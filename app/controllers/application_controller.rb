@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     def require_user
         if !logged_in?
             flash[:error] = "Debes estar logeado"
-            redirect_to root_path
+            redirect_to login_path
         end
     end
 end

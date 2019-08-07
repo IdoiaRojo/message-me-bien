@@ -1,8 +1,9 @@
-<div class="row">
-    <% flash.each do |name, msg| %>
-        <div class="ui message container <%="#{name}"%>">
-            <i class="close icon"></i>
-            <%= content_tag :p, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+
+<% flash.each do |message_type, msg| %>
+    <div class="ui message container <%="#{message_type}"%>">
+        <i class="close icon"></i>
+        <div class="header">
+            <%= msg %>
         </div>
-    <% end %>
-</div> 
+    </div>
+<% end %>
