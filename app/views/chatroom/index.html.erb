@@ -2,8 +2,6 @@
     <i class="circular coffee icon"></i>
     Cuéntame algo
 </h2>
-
-
 <div class="ui two column grid">
     <div class="twelve wide column">
         <div class="ui fluid raised card chatbox">
@@ -13,14 +11,16 @@
                 </div>
             </div>
             <div class="extra content">
-                <form class="ui reply form">
-                    <div class="field">
-                        <div class="ui fluid icon input">
-                            <input type="text" placeholder="Responder">
-                            <i class="bordered inverted orange edit icon"></i>
+                <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path) do |f| %>
+                    <form class="ui reply form">
+                        <div class="field">
+                            <div class="ui fluid icon input">
+                                <%= f.text_field :body %>
+                                <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe, class: "orange" %>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                <% end %>
             </div>
         </div>
     </div>

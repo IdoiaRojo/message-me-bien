@@ -27,10 +27,13 @@
 .ui.orange.buttons .button, 
 .ui.orange.button,
 i.inverted.bordered.orange.icon, 
-i.inverted.circular.orange.icon {
+i.inverted.circular.orange.icon,
+button.orange {
     background-color: #a162f7 !important;
+    border: none;
     &:hover{
         background-color: #7a42c8 !important;
+        border: none;
     }
 }
 .encabezado .icon{
