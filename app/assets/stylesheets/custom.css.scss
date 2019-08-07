@@ -40,3 +40,10 @@ button.orange {
     color: #6f88fe;
     font-size: 30px;
 }
+#messages{
+    height: 15em;
+    overflow: auto;
+}
+#send-btn{
+    display: none
+}
