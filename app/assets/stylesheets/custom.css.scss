@@ -2,3 +2,38 @@
 .chatbox{
     height: 450px;
 }
+.text-center{
+    text-align: center;
+}
+.fondo{
+    background: #2a3950;
+}
+.blanquete{
+    background: #fefef2;
+}
+.azulillo{
+    background: #45e3ff;
+}
+.azulon{
+    background: #6f88fe;
+}
+.moradete{
+    background: #a162f7;
+}
+
+.ui.inverted.menu {
+    background: #2a3950;
+}
+.ui.orange.buttons .button, 
+.ui.orange.button,
+i.inverted.bordered.orange.icon, 
+i.inverted.circular.orange.icon {
+    background-color: #a162f7 !important;
+    &:hover{
+        background-color: #7a42c8 !important;
+    }
+}
+.encabezado .icon{
+    color: #6f88fe;
+    font-size: 30px;
+}
