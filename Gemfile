@@ -28,6 +28,7 @@ gem 'semantic-ui-sass'
 gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
+gem 'redis-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
